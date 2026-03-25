@@ -2,62 +2,153 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+
+  <!-- RESPONSIVE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Nuestro aniversario ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: #000;
-      color: #fff;
+      color: #f5f5f7;
       text-align: center;
     }
 
     .container {
-      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 16px;
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2.2em;
+      font-weight: 600;
       margin-bottom: 10px;
+      letter-spacing: -0.5px;
     }
 
-    p {
+    .subtitle {
+      font-size: 1em;
+      color: #a1a1a6;
+      margin-bottom: 40px;
+      line-height: 1.4;
+    }
+
+    .photo {
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    .final-text {
       font-size: 1.2em;
-      margin-bottom: 30px;
+      margin-top: 60px;
+      color: #d1d1d6;
+      line-height: 1.4;
     }
 
-    img {
-      width: 90%;
-      max-width: 400px;
-      margin: 10px 0;
-      border-radius: 12px;
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
+    /* delays suaves */
+    .photo:nth-child(3) { animation-delay: 0.2s; }
+    .photo:nth-child(4) { animation-delay: 0.4s; }
+    .photo:nth-child(5) { animation-delay: 0.6s; }
+
+    /* 📱 Ajustes extra para pantallas pequeñas */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .subtitle {
+        font-size: 0.95em;
+      }
+
+      .final-text {
+        font-size: 1.1em;
+      }
+    }
+
   </style>
 </head>
+
 <body>
 
   <div class="container">
+    
     <h1>Nuevo mes juntos! 💙</h1>
-    <p>Gracias por todo lo que estamos y seguiremos construyendo</p>
+    <p class="subtitle">Gracias por todo lo que estamos y seguiremos construyendo</p>
 
-    <img src="bailando.PNG" alt="Brillando">
-    <p>Brillando</p>
-    <img src="logros.JPG" alt="Logros">
-    <p>Celebrando logros</p>
-    <img src="cocinando.PNG" alt="Cocinando">
-    <p>Cocinando</p>
-    <img src="ratas.PNG" alt="Ratas">
-    <p>Porque eso es lo que somos</p>
-    <img src="sorprendida.PNG" alt="Sorprendida">
-    <p>Sorprendiendo</p>
-    <img src="mamsita.PNG" alt="Mamasita">
-    <p>Coqueteandome 1313</p>
-    <img src="dormidos.JPG" alt="Dormidos">
-    <p>Bien dormidos después del cardio</p>
+    <div class="photo">
+      <img src="bailando.PNG" alt="Brillando">
+      <p>Brillando</p>
+    </div>
 
+    <div class="photo">
+      <img src="logros.JPG" alt="Logros">
+      <p>Celebrando logros</p>
+    </div>
 
-    <p>Y lo mejor… aún está por venir ✨</p>
+    <div class="photo">
+      <img src="cocinando.PNG" alt="Cocinando">
+      <p>Cocinando</p>
+    </div>
+
+    <div class="photo">
+      <img src="ratas.PNG" alt="Ratas">
+      <p>Porque eso es lo que somos</p>
+    </div>
+
+    <div class="photo">
+      <img src="sorprendida.PNG" alt="Sorprendida">
+      <p>Impaktada</p>
+    </div>
+
+    <div class="photo">
+      <img src="mamsita.PNG" alt="Mamasita">
+      <p>Coqueteandome 1313</p>
+    </div>
+
+    <div class="photo">
+      <img src="dormidos.JPG" alt="Dormidos">
+      <p>Bien dormidos después del cardio</p>
+    </div>
+
+    <p class="final-text">
+      Lo mejor seguirá llegando ✨
+    </p>
+
   </div>
 
 </body>
 </html>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
